@@ -48,7 +48,6 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f005";
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -81,8 +80,11 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #fff;
-    background: #18bc9c;
+    background-attachment: scroll;
+    background-image: url(../img/header-bg.jpg);
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
 }
 
 header .container {
@@ -97,13 +99,14 @@ header img {
 
 header .intro-text .name {
     display: block;
-    text-transform: uppercase;
+    color: white;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
 }
 
 header .intro-text .skills {
+    color: white;
     font-size: 1.25em;
     font-weight: 300;
 }
@@ -148,7 +151,6 @@ header .intro-text .skills {
 }
 
 .navbar {
-    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
@@ -168,6 +170,7 @@ header .intro-text .skills {
 .navbar-default,
 .navbar-inverse {
     border: 0;
+    background-color: transparent;
 }
 
 section {
